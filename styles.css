@@ -7,11 +7,11 @@
     --light-color:#1C8585;
     --black:#222;
     --white:#fff;
-    --light-black:#454545;
     --border:.2rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,0.1);
     --text-shadow:0 1.5rem 3rem rgba(0,0,0,0.1);
     --light-background:#B0E0E6;
+
  }
 
 *{
@@ -84,7 +84,6 @@ section{
     background-color: var(--light-color);
 }
 
-/* navbar style */
 .header{
     position: sticky;
     top: 0;
@@ -113,9 +112,6 @@ section{
 
 .header .navbar a:hover{
     color: var(--primary-color);
-}
-.header .navbar .nav-link:hover{
-    color: var(--light-color);
 }
 
 #menu-btn{
@@ -201,6 +197,7 @@ section{
 .box-container img{
     width: 100%;
     object-fit: cover;
+    border-radius: 1rem;
     transition: transform 0.5s ease;
 }
 .box-container img:hover{
@@ -413,15 +410,6 @@ section{
     border: var(--border);
     box-shadow: var(--box-shadow);
     background: var(--white);
-    display: none;
-}
-.packges .box-container .box:nth-child(1),
-.packges .box-container .box:nth-child(2),
-.packges .box-container .box:nth-child(3),
-.packges .box-container .box:nth-child(4),
-.packges .box-container .box:nth-child(5),
-.packges .box-container .box:nth-child(6){
-    display: inline-block;
 }
 .packges .box-container .box .image{
     height: 25rem;
@@ -441,7 +429,7 @@ section{
     font-size: 2.5rem;
 }
 .packges .box-container .box .content p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2;
     padding: 1rem 0;
 }
@@ -450,45 +438,31 @@ section{
     margin-top: 2rem;
 }
 
-/* Booking Page Style */
-/* Booking php form style */
 
-.booking .book-form{
-    padding: 2rem;
-    background: var(--light-background);
-}
-.booking .book-form .flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-.booking .book-form .flex .inputBox{
-    flex: 1 1 41rem;
-}
-.booking .book-form .flex .inputBox input{
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    margin-top: 1.5rem;
-    border: var(--border);
-}
-.booking .book-form .flex .inputBox input:focus{
-    background: var(--black);
-    color: var(--white);
-}
-.booking .book-form .flex .inputBox input:focus::placeholder{
-    background: var(--black);
-    color: var(--white);
-}
-.booking .book-form .flex .inputBox span{
-    font-size: 2rem;
-    color: var(--light-black);
-}
-.booking .book-form .btn{
-    margin-top: 2rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Style */
 .footer{
@@ -539,6 +513,22 @@ section{
     color: var(--light-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 /* Media Queries */
 @media (max-width:1200px){
@@ -560,11 +550,7 @@ section{
     }
 }
 
-@media (max-width:768px){
-
-    .heading h1{
-        font-size: 4rem;
-    }
+@media (max-width:760px){
 
     #menu-btn{
         display: inline-block;
